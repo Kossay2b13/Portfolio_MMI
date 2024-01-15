@@ -1,0 +1,493 @@
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    animation: open 1s ease-in-out;
+    background-color: #161513;
+  }
+  
+  @keyframes open {
+  
+    from{ 
+      opacity: 0;
+      transform: scale(1.15) translate(0px, 250px);
+    }
+  
+    to{
+      opacity: 1;
+      transform: scale(1) translate(0px, 0px);
+    }
+  
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Share Tech Mono", sans-serif;
+    background: #f1f1f1;
+  }
+  
+  header{
+        width: 100vw;
+  }
+  .color{
+  
+    height: 3vh;
+    animation: animateBg 1.5s linear infinite;
+    background-image: linear-gradient(90deg,#b16cea,#ff5e69,#ff8a56,#ffa84b,#b16cea,#ff5e69);
+    background-size: 500% 100%;
+    width: 100vw;
+  }
+  
+  .navbarfull{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  
+    
+  }
+  .navbar{
+    width: 60%;
+      background-color: #161513;
+      display: inline-flex;
+      justify-content: space-between;
+      padding: 20px;
+  
+  }
+  .navbar2{
+    width: 40%;
+      background-color: #161513;
+      display: flex;
+      padding: 20px;
+      justify-content: flex-end;
+   
+  
+  
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .noir{
+    color: black;
+  }
+  
+  
+  .haut{
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #161513;
+    transition: 0.3s;
+  }
+  .haut:hover{
+    background-color: orange;
+    border-color: orange;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+  }
+  
+  .radius{
+    padding-right: 50px;
+  }
+  
+  .haut2{
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: solid white 6px;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .haut2:hover{
+  transform: scale(1.15);
+  
+  }
+  
+  .accueil {
+    background-color: #161513;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .accueil .container {
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  
+
+
+  .page1{
+    display: flex;
+  }
+
+  .image{
+    margin-right: 40px;
+  }
+
+  .accueil h1 span {
+   
+    animation: animateBg 2s linear infinite;
+    background-image: linear-gradient(90deg,#b16cea,#ff5e69,#ff8a56,#ffa84b,#b16cea,#ff5e69);
+    background-size: 500% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  
+  @keyframes animateBg {
+    0% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+  }
+
+
+
+  .accueil h1 {
+    margin-right: 650px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+    .accueil h2 {
+      margin-right: 650px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .competences {
+    padding: 40px 0;
+    background-color: #161513;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .competences h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .competences h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .progress-bar {
+    background: #fff;
+    border-radius: 10px;
+    height: 10px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .progress-line {
+    background: #1869bb;
+    border-radius: 10px;
+    height: 10px;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  
+  .projets {
+    padding: 20px 0;
+    background-color: #161513;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100vw;
+  }
+
+
+  .suppr{
+    color: #161513;
+  }
+
+
+  .suppr:hover{
+    color: blue;
+    scale: (1.15);
+    text-decoration: underline;
+  }
+  
+
+  .projets .container {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  
+  .projets h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .projets .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+  }
+  
+  .projets .projet {
+    text-align: center;
+    width: 20vw;
+  }
+  
+  .projets img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .projets h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .projets p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ff8a56;
+    margin-bottom: 0;
+  }
+  .projet:hover{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 10px 5px grey;
+    transition: 1s;
+  }
+  
+  .projet:hover h3{
+    color: #161513;
+    transition: 1s;
+  }
+  .projet:hover p{
+    color: rgb(159, 42, 0);
+    transition: 1s;
+  }
+  
+  
+  /* Section a propos */
+  .a-propos{
+     background-color: #161513;
+     padding-top: 20px;
+     padding-bottom: 20px;
+  }
+  .a-proposh1{
+    text-align: center;
+    color: #f1f1f1;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 20px;
+  }
+  
+  .a-propos p{
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-align: center;
+  }
+  /* Section de contact */
+  
+  
+  @media (orientation:portrait) {
+    
+    .navbar, .navbarfull{
+      flex-direction: column;
+      width: 100%;
+      padding:0px;
+    }
+  
+    .navbar2{
+      padding:0px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .radius{
+      padding: 0;
+    }
+  
+    .navbar{
+      padding-bottom: 0px;
+      align-items: center;
+    }
+  
+  }
+  
+  .contact {
+    padding: 20px 0;
+    background-color: #161513;
+    width: 100vw;
+  }
+  
+  .contact .container {
+    margin: 0 auto;
+    max-width: 1140px;
+    
+  
+  
+  }
+  
+  .contact h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact .row2 {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .col-1-of-2 .text:hover{
+    transform: scale(1.1);
+    border: solid white;
+    border-radius: 20px;
+  }
+  .col-1-of-2 .mail:hover{
+    transform: scale(1.1);
+    border: solid white;
+    border-radius: 20px;
+  }
+  .mess:hover{
+    transform: scale(1.1);
+    border: solid white;
+    border-radius: 20px;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+    background-color: #161513;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .contact input[type="submit"] {
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e67e22;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+  }
+  form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  /* Section des rÃ©seaux sociaux */
+  .reseaux {
+    padding: 20px 0;
+    background-color: #161513;
+    width: 100vw;
+  }
+  .reseaux .row {
+    display: flex;
+  justify-content: center;
+  gap: 50px;
+  }
+  .col-1-of{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+    
+  }
+  
+  .reseaux .container {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  
+  .reseaux h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161513;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .reseaux .row {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .reseaux .social-link {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c3e50;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .reseaux img {
+    margin-right: 10px;
+  }
+  img{
+    width: 5vw;
+    max-width: 100px;
+  }
+  
+  /* Section de pied de page */
+  footer {
+    padding: 40px 0;
+    background-color: #161513;
+    height: 5vh;
+    width: 100vw;
+  }
+  
+  footer .container {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 0;
+  }
